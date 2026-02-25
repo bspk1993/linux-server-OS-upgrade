@@ -32,13 +32,24 @@ free -m: Shows total, used, and free memory in megabytes.
 
 cat /proc/meminfo: Provides detailed information on system memory.
 
-Disk space usage and increasing 
+# Disk space usage and increasing 
 
 lslbk- check the existing usage/partitions
 
 df -h - which filesystem need space
 
-sudo resize2fs /dev/sda3,4 etc with any name
+growpart /dev/xvda1
+
+lslbk
+
+df -h
+
+resize2fs /dev/xvda1
+
+lslbl
+
+df -h
+
 
 # Mounting EFS to EC2 instance 
 
