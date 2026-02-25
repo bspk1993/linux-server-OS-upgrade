@@ -40,7 +40,7 @@ df -h - which filesystem need space
 
 sudo resize2fs /dev/sda3,4 etc with any name
 
-Mounting EFS to EC2 instance 
+# Mounting EFS to EC2 instance 
 
 give 2049 port in inbound rule of the EC2 instance 
 
